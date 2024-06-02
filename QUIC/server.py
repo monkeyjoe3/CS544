@@ -26,7 +26,7 @@ async def run_quic_server():
         configuration.load_cert_chain(certfile="certs/server.crt", keyfile="certs/server.key")
         await serve(
             "localhost",
-            4433,
+            3074,
             configuration=configuration,
             create_protocol=MyQuicProtocol,
         )

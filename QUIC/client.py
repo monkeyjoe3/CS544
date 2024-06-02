@@ -7,7 +7,7 @@ async def run_quic_client():
     configuration = QuicConfiguration(is_client=True)
 
     # Connect to the server
-    async with connect("example.com", 443, configuration=configuration) as client:
+    async with connect("localhost", 3074, configuration=configuration) as client:
         # Perform the handshake
         await client.handshake()
 

@@ -26,7 +26,7 @@ async def run_quic_client():
         configuration.load_verify_locations(cafile="certs/server.crt")
         async with connect(
             "localhost",
-            4433,
+            3074,
             configuration=configuration,
             create_protocol=MyQuicProtocol,
         ) as protocol:
